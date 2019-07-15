@@ -1,0 +1,112 @@
+
+@media (min-width: 992px) {
+    .app {
+      width: 100%;
+      height: 810px;
+      background-size: cover;
+      background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+    }
+
+  .header {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 30px;
+    color: gold;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .navList {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .dropDown {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+    .app {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+      }
+
+  .header {
+    background: black;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 25px;
+    color: gold;
+  }
+
+  .menu {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background: gold;
+    color: white;
+    /* font-size: 30px; */
+    border: none;
+  }
+
+  .dropDown {
+    background: black;
+    color: white;
+  }
+
+  .show-animation {
+    animation-name: show;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .hide-animation {
+    animation-name: hide;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@keyframes show {
+  0% {
+    height: 0px
+  }
+  100% {
+    height: 400px;
+  }
+}
+
+@keyframes hide {
+  0% {
+    height: 400px
+  }
+  100% {
+    height: 0px
+  }
+}
